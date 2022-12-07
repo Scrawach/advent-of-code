@@ -1,4 +1,5 @@
 using System.Linq;
+using day_01_calorie_counting.Counting;
 using FluentAssertions;
 using Moq;
 using NUnit.Framework;

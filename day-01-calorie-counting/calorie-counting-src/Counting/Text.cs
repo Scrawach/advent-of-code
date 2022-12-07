@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace day_01_calorie_counting
+namespace day_01_calorie_counting.Counting
 {
     public class Text : IText
     {

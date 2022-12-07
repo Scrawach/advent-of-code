@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using day_01_calorie_counting.Counting;
 
 namespace day_01_calorie_counting
 {

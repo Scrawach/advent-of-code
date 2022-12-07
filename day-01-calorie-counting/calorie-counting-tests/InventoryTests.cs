@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using day_01_calorie_counting.Counting;
 using FluentAssertions;
 using NUnit.Framework;
 

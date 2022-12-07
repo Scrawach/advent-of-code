@@ -1,6 +1,6 @@
 using System;
 
-namespace day_01_calorie_counting
+namespace day_01_calorie_counting.Counting
 {
     public class Inventory
     {
