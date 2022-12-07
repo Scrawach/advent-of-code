@@ -6,9 +6,9 @@ namespace rock_paper_scissors_src.GameRules
 {
     public class DefaultRules : IGameRule, IChoicesStorage
     {
-        public const string Rock = "Rock";
-        public const string Paper = "Paper";
-        public const string Scissors = "Scissors";
+        private const string Rock = "Rock";
+        private const string Paper = "Paper";
+        private const string Scissors = "Scissors";
         private readonly string[] _choices = {Rock, Paper, Scissors};
 
         private readonly IGameRule _rule;

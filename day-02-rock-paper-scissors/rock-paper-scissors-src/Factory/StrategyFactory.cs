@@ -11,21 +11,21 @@ namespace rock_paper_scissors_src.Factory
         private static readonly string WorkingDirectory =
             Environment.CurrentDirectory[..Environment.CurrentDirectory.IndexOf("bin", StringComparison.Ordinal)];
 
-        private readonly string _inputFile;
+        private readonly string _inputFileName;
 
-        public StrategyFactory(string input) =>
-            _inputFile = input;
+        public StrategyFactory(string inputFileName) =>
+            _inputFileName = inputFileName;
 
         public StrategyGuide ChoiceBased()
         {
             var rules = new DefaultRules();
-            return Create(_inputFile, rules, new AsChoiceConverter(rules));
+            return Create(_inputFileName, rules, new AsChoiceConverter(rules));
         }
 
         public StrategyGuide ResultBased()
         {
             var rules = new DefaultRules();
-            return Create(_inputFile, rules, new AsRoundResultConverter(rules, rules));
+            return Create(_inputFileName, rules, new AsRoundResultConverter(rules, rules));
         }
 
         private static StrategyGuide Create(string fileName, DefaultRules rules, IConverter converter)

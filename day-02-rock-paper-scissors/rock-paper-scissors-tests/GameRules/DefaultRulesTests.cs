@@ -7,6 +7,10 @@ namespace rock_paper_scissors_tests.GameRules
 {
     public class DefaultRulesTests
     {
+        private const string Rock = "Rock";
+        private const string Paper = "Paper";
+        private const string Scissors = "Scissors";
+        
         [Test]
         public void WhenGetAvailableChoices_ThenShouldReturn_RockAndPaperAndScissors()
         {
@@ -16,12 +20,12 @@ namespace rock_paper_scissors_tests.GameRules
             // act
 
             // answer
-            defaultRules.AvailableChoices().Should().Equal(DefaultRules.Rock, DefaultRules.Paper, DefaultRules.Scissors);
+            defaultRules.AvailableChoices().Should().Equal(Rock, Paper, Scissors);
         }
 
-        [TestCase(DefaultRules.Rock)]
-        [TestCase(DefaultRules.Paper)]
-        [TestCase(DefaultRules.Scissors)]
+        [TestCase(Rock)]
+        [TestCase(Paper)]
+        [TestCase(Scissors)]
         public void WhenScoreSameChoices_ThenShouldReturnZeroPoints(string choice)
         {
             // arrange
@@ -34,9 +38,9 @@ namespace rock_paper_scissors_tests.GameRules
             score.Should().Be(0);
         }
 
-        [TestCase(DefaultRules.Rock, DefaultRules.Scissors)]
-        [TestCase(DefaultRules.Paper, DefaultRules.Rock)]
-        [TestCase(DefaultRules.Scissors, DefaultRules.Paper)]
+        [TestCase(Rock, Scissors)]
+        [TestCase(Paper, Rock)]
+        [TestCase(Scissors, Paper)]
         public void WhenScoreStrong_AndWeakChoices_ThenShouldReturnPositiveOnePoints(string strong, string weak)
         {
             // arrange
@@ -49,9 +53,9 @@ namespace rock_paper_scissors_tests.GameRules
             score.Should().Be(1);
         }
 
-        [TestCase(DefaultRules.Rock, DefaultRules.Paper)]
-        [TestCase(DefaultRules.Paper, DefaultRules.Scissors)]
-        [TestCase(DefaultRules.Scissors, DefaultRules.Rock)]
+        [TestCase(Rock, Paper)]
+        [TestCase(Paper, Scissors)]
+        [TestCase(Scissors, Rock)]
         public void WhenScoreWeak_AndStrongChoices_ThenShouldReturnNegativeOnePoints(string weak, string strong)
         {
             // arrange
