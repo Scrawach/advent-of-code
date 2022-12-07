@@ -1,4 +1,6 @@
-namespace rock_paper_scissors_src
+using rock_paper_scissors_src.Rounds;
+
+namespace rock_paper_scissors_src.GameRules.Abstract
 {
     public class FirstMoreThanSecond : IGameRule
     {
@@ -11,12 +13,12 @@ namespace rock_paper_scissors_src
             _second = second;
         }
 
-        public int Score(string first, string second)
+        public int Score(Round round)
         {
-            if (first == _first && second == _second)
+            if ((round.Player, round.Opponent) == (_first, _second))
                 return 1;
 
-            if (first == _second && second == _first)
+            if ((round.Player, round.Opponent) == (_second, _first))
                 return -1;
 
             return 0;

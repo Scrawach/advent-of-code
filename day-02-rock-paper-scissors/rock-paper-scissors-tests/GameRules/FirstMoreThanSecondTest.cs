@@ -1,9 +1,9 @@
-using System;
 using FluentAssertions;
 using NUnit.Framework;
-using rock_paper_scissors_src;
+using rock_paper_scissors_src.GameRules.Abstract;
+using rock_paper_scissors_src.Rounds;
 
-namespace rock_paper_scissors_tests
+namespace rock_paper_scissors_tests.GameRules
 {
     public class FirstMoreThanSecondTest
     {
@@ -14,7 +14,7 @@ namespace rock_paper_scissors_tests
             var rule = new FirstMoreThanSecond("a", "b");
 
             // act
-            var score = rule.Score("a", "b");
+            var score = rule.Score(new Round("a", "b"));
 
             // answer
             score.Should().Be(1);
@@ -27,7 +27,7 @@ namespace rock_paper_scissors_tests
             var rule = new FirstMoreThanSecond("a", "b");
 
             // act
-            var score = rule.Score("b", "a");
+            var score = rule.Score(new Round("b", "a"));
 
             // answer
             score.Should().Be(-1);
@@ -41,7 +41,7 @@ namespace rock_paper_scissors_tests
             var rule = new FirstMoreThanSecond("a", "b");
 
             // act
-            var score = rule.Score(choice, choice);
+            var score = rule.Score(new Round(choice, choice));
 
             // answer
             score.Should().Be(0);
@@ -56,7 +56,7 @@ namespace rock_paper_scissors_tests
             var rule = new FirstMoreThanSecond("a", "b");
 
             // act
-            var score = rule.Score(first, second);
+            var score = rule.Score(new Round(first, second));
 
             // answer
             score.Should().Be(0);
