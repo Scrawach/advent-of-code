@@ -51,7 +51,7 @@ your strategy guide?*
 
 <details>
   <summary><strong><em>See result here</em></strong></summary>
-	Your puzzle answer was <strong><em>?????</em></strong>.
+	Your puzzle answer was <strong><em>12679</em></strong>.
 </details>
 
 ### --- Part Two ---
@@ -77,5 +77,5 @@ total score be if everything goes exactly according to your strategy guide?*
 
 <details>
   <summary><strong><em>See result here</em></strong></summary>
-	Your puzzle answer was <strong><em>?????</em></strong>.
+	Your puzzle answer was <strong><em>14470</em></strong>.
 </details>
