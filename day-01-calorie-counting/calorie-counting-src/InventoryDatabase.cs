@@ -15,13 +15,14 @@ namespace day_01_calorie_counting
             
             foreach (var line in _text.Lines())
             {
-                inventory.Add(int.Parse(line));
-
                 if (string.IsNullOrWhiteSpace(line))
                 {
                     yield return inventory;
                     inventory = new Inventory();
+                    continue;
                 }
+                
+                inventory.Add(int.Parse(line));
             }
 
             yield return inventory;
