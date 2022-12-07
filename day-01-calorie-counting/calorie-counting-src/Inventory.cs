@@ -2,6 +2,11 @@ namespace day_01_calorie_counting
 {
     public class Inventory
     {
-        public int TotalCalories => 0;
+        private int _calories;
+        
+        public int TotalCalories => _calories;
+
+        public void Add(int calories) =>
+            _calories = calories;
     }
 }
