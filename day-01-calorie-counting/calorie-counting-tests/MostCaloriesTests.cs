@@ -23,8 +23,8 @@ namespace day_01_calorie_counting
             mostCalories.Solve().Should().Be(expected);
         }
 
-        [TestCase("example.txt", 45000, 3)]
-        public void WhenReadFile_ThenShouldReturnMostCaloriesSum_ForSeveralLeaders(string filePath, int expected, int numberOfLeaders)
+        [TestCase("example.txt", 3, 45000)]
+        public void WhenReadFile_ThenShouldReturnMostCaloriesSum_ForSeveralLeaders(string filePath, int numberOfLeaders, int expected)
         {
             // arrange
             var path = Path.Combine(WorkingDirectory, filePath);    
