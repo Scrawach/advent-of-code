@@ -22,5 +22,18 @@ namespace day_01_calorie_counting
             // answer
             mostCalories.Solve().Should().Be(expected);
         }
+
+        [TestCase("example.txt", 45000, 3)]
+        public void WhenReadFile_ThenShouldReturnMostCaloriesSum_ForSeveralLeaders(string filePath, int expected, int numberOfLeaders)
+        {
+            // arrange
+            var path = Path.Combine(WorkingDirectory, filePath);    
+            var mostCalories = new MostCalories(numberOfLeaders, new InventoryDatabase(new Text(path)));
+
+            // act
+
+            // answer
+            mostCalories.Solve().Should().Be(expected);
+        }
     }
 }
