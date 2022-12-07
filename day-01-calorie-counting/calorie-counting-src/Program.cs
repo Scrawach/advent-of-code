@@ -6,7 +6,7 @@ namespace day_01_calorie_counting
     public static class Program
     {
         private static readonly string WorkingDirectory = 
-            Environment.CurrentDirectory[..Environment.CurrentDirectory.IndexOf("bin")];
+            Environment.CurrentDirectory[..Environment.CurrentDirectory.IndexOf("bin", StringComparison.Ordinal)];
         
         private static void Main(string[] args)
         {

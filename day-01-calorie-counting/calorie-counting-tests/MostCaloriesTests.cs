@@ -8,7 +8,7 @@ namespace day_01_calorie_counting
     public class MostCaloriesTests
     {
         private static readonly string WorkingDirectory = 
-            Environment.CurrentDirectory[..Environment.CurrentDirectory.IndexOf("bin")];
+            Environment.CurrentDirectory[..Environment.CurrentDirectory.IndexOf("bin", StringComparison.Ordinal)];
         
         [TestCase("example.txt",24000)]
         public void WhenReadFile_ThenShouldReturnMostCaloriesNumber(string fileName, int expected)
