@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using FluentAssertions;
 using NUnit.Framework;
 
@@ -28,6 +29,21 @@ namespace day_01_calorie_counting
             // act
             inventory.Add(calories);
 
+            // answer
+            inventory.TotalCalories.Should().Be(expected);
+        }
+
+        [TestCase(new[] {1, 1, 1, 1}, 4)]
+        [TestCase(new[] {20, 30, 40, 10}, 100)]
+        public void WhenAddSeveralCalories_ThenTotalCaloriesShouldReturnTheirSum(IEnumerable<int> input, int expected)
+        {
+            // arrange
+            var inventory = new Inventory();
+
+            // act
+            foreach (var item in input)
+                inventory.Add(item);
+            
             // answer
             inventory.TotalCalories.Should().Be(expected);
         }
