@@ -65,5 +65,18 @@ namespace day_01_calorie_counting
             // answer
             act.Should().Throw<OverflowException>();
         }
+
+        [Test]
+        public void WhenAddNegativeNumber_ThenShouldThrowArgumentException()
+        {
+            // arrange
+            var inventory = new Inventory();
+
+            // act
+            Action act = () => inventory.Add(-1);
+
+            // answer
+            act.Should().Throw<ArgumentException>();
+        }
     }
 }
