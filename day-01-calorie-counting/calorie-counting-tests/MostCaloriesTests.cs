@@ -5,22 +5,22 @@ using NUnit.Framework;
 
 namespace day_01_calorie_counting
 {
-    public class FirstTaskTests
+    public class MostCaloriesTests
     {
         private static readonly string WorkingDirectory = 
             Environment.CurrentDirectory[..Environment.CurrentDirectory.IndexOf("bin")];
         
         [TestCase("example.txt",24000)]
-        public void WhenUsedTestData_ThenSolveShouldBeExpected(string path, int expected)
+        public void WhenReadFile_ThenShouldReturnMostCaloriesNumber(string path, int expected)
         {
             // arrange
             var exampleFilePath = Path.Combine(WorkingDirectory, path);
-            var firstTask = new FirstTask(new InventoryDatabase(new Text(exampleFilePath)));
+            var mostCalories = new MostCalories(new InventoryDatabase(new Text(exampleFilePath)));
             
             // act
 
             // answer
-            firstTask.Solve().Should().Be(expected);
+            mostCalories.Solve().Should().Be(expected);
         }
     }
 }
