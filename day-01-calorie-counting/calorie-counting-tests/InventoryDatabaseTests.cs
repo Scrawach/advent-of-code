@@ -24,7 +24,7 @@ namespace day_01_calorie_counting
 
         [TestCase(new[] {"1000", "", "1000", "2000", "", "5000"}, new[] { 1000, 3000, 5000 })]
         [TestCase(new[] {"100", "200", "300", "400"}, new[] { 1000 })]
-        public void WhenGetAllInventories_ThenItShouldCreateInventoryFromText_AndUseEmptyStringAsDelimiters(string[] text, int[] expected)
+        public void WhenGetAllInventories_ThenItShouldCreateInventoriesFromText_AndUseEmptyStringAsDelimiters(string[] text, int[] expected)
         {
             // arrange
             var textMock = new Mock<IText>();
