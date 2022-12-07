@@ -3,7 +3,7 @@ using System.IO;
 
 namespace day_01_calorie_counting
 {
-    public class Text
+    public class Text : IText
     {
         private readonly string _path;
 
