@@ -15,4 +15,8 @@
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\rock-paper-scissors-src\rock-paper-scissors-src.csproj" />
+    </ItemGroup>
+
 </Project>
