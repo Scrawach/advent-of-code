@@ -17,7 +17,7 @@ namespace day_01_calorie_counting
             Console.WriteLine($"First Task Result: {mostCalories.Solve()}."); // First Task Result: 68923
 
             var mostCaloriesSum = new MostCalories(3, new InventoryDatabase(new Text(path)));
-            Console.WriteLine($"Second Task Result: {mostCaloriesSum.Solve()}"); // First Task Result: 200044
+            Console.WriteLine($"Second Task Result: {mostCaloriesSum.Solve()}."); // First Task Result: 200044
         }
     }
 }
