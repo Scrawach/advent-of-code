@@ -5,6 +5,6 @@ namespace day_01_calorie_counting
         public int TotalCalories { get; private set; }
 
         public void Add(int calories) =>
-            TotalCalories += calories;
+            TotalCalories = checked(TotalCalories + calories);
     }
 }

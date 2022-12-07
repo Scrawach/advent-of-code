@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using FluentAssertions;
 using NUnit.Framework;
@@ -46,6 +47,23 @@ namespace day_01_calorie_counting
             
             // answer
             inventory.TotalCalories.Should().Be(expected);
+        }
+
+        [Test]
+        public void WhenAddGiantValues_ThenShouldThrowOverflowException()
+        {
+            // arrange
+            var inventory = new Inventory();
+
+            // act
+            Action act = () =>
+            {
+                inventory.Add(int.MaxValue);
+                inventory.Add(int.MaxValue);
+            };
+
+            // answer
+            act.Should().Throw<OverflowException>();
         }
     }
 }
