@@ -11,11 +11,11 @@ namespace day_01_calorie_counting
             Environment.CurrentDirectory[..Environment.CurrentDirectory.IndexOf("bin")];
         
         [TestCase("example.txt",24000)]
-        public void WhenReadFile_ThenShouldReturnMostCaloriesNumber(string path, int expected)
+        public void WhenReadFile_ThenShouldReturnMostCaloriesNumber(string fileName, int expected)
         {
             // arrange
-            var exampleFilePath = Path.Combine(WorkingDirectory, path);
-            var mostCalories = new MostCalories(new InventoryDatabase(new Text(exampleFilePath)));
+            var path = Path.Combine(WorkingDirectory, fileName);
+            var mostCalories = new MostCalories(new InventoryDatabase(new Text(path)));
             
             // act
 
@@ -24,10 +24,10 @@ namespace day_01_calorie_counting
         }
 
         [TestCase("example.txt", 3, 45000)]
-        public void WhenReadFile_ThenShouldReturnMostCaloriesSum_ForSeveralLeaders(string filePath, int numberOfLeaders, int expected)
+        public void WhenReadFile_ThenShouldReturnMostCaloriesSum_ForSeveralLeaders(string fileName, int numberOfLeaders, int expected)
         {
             // arrange
-            var path = Path.Combine(WorkingDirectory, filePath);    
+            var path = Path.Combine(WorkingDirectory, fileName);    
             var mostCalories = new MostCalories(numberOfLeaders, new InventoryDatabase(new Text(path)));
 
             // act
