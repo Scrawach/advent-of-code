@@ -16,5 +16,8 @@ namespace clamp_cleanup_src
 
         public bool IsOverlap(Range other) =>
             other._end >= _start && other._start <= _end;
+
+        public override string ToString() =>
+            $"[{_start}..{_end}]";
     }
 }
