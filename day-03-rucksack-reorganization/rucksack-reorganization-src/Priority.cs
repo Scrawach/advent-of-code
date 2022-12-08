@@ -4,7 +4,8 @@ namespace rucksack_reorganization_src
     {
         public int Convert(char symbol)
         {
-            return 0;
+            var offset = char.IsUpper(symbol) ? 'A' - 26 : 'a';
+            return symbol - offset + 1;
         }
     }
 }
