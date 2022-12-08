@@ -10,7 +10,7 @@ namespace clamp_cleanup_src.Logic
         public Camp(PairRangeTextStorage storage) =>
             _storage = storage;
 
-        public int TotalContainsPair() =>
+        public int TotalContainsPairs() =>
             _storage.All()
                 .Where(pair => pair.ContainsEachOther())
                 .Sum(pair => 1);

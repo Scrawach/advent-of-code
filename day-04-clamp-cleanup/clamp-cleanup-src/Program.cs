@@ -10,7 +10,7 @@ namespace clamp_cleanup_src
             var factory = new CampFactory("input.txt");
             var camp = factory.Create();
             
-            Console.WriteLine($"First Task Result: {camp.TotalContainsPair()}."); // First Task Result: 571.
+            Console.WriteLine($"First Task Result: {camp.TotalContainsPairs()}."); // First Task Result: 571.
             Console.WriteLine($"Second Task Result: {camp.TotalOverlapPairs()}."); // Second Task Result: 917.
         }
     }

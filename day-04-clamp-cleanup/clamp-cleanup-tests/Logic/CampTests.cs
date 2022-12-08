@@ -14,7 +14,7 @@ namespace clamp_cleanup_tests.Logic
             var camp = factory.Create();
 
             // act
-            var count = camp.TotalContainsPair();
+            var count = camp.TotalContainsPairs();
 
             // answer
             count.Should().Be(expected);
