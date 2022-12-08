@@ -1,12 +1,17 @@
-namespace clamp_cleanup_src
+using System;
+
+namespace clamp_cleanup_src.Logic
 {
-    public class Range
+    public readonly struct Range
     {
         private readonly int _start;
         private readonly int _end;
 
         public Range(int start, int end)
         {
+            if (end < start)
+                throw new ArgumentException();
+            
             _start = start;
             _end = end;
         }

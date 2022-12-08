@@ -1,9 +1,10 @@
+using System;
 using System.Collections;
-using clamp_cleanup_src;
 using FluentAssertions;
 using NUnit.Framework;
+using Range = clamp_cleanup_src.Logic.Range;
 
-namespace clamp_cleanup_tests
+namespace clamp_cleanup_tests.Logic
 {
     public class RangeTests
     {
@@ -30,7 +31,23 @@ namespace clamp_cleanup_tests
             // answer
             result.Should().Be(expected);
         }
-        
+
+        [TestCase(10, 2)]
+        [TestCase(5, 0)]
+        public void WhenCreateInvalidRange_ThenShouldThrowArgumentException(int start, int end)
+        {
+            // arrange
+
+            // act
+            Action act = () =>
+            {
+                var range = new Range(start, end);
+            };
+
+            // answer
+            act.Should().Throw<ArgumentException>();
+        }
+
         private class ContainsRangeDataSource : IEnumerable
         {
             public IEnumerator GetEnumerator()
