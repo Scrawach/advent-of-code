@@ -12,7 +12,7 @@ namespace rucksack_reorganization_src
             var firstTask = factory.Single();
             Console.WriteLine($"First Task Result: {firstTask.TotalPriorityScore()}."); // First Task Result: 8123.
 
-            var secondTask = factory.Group();
+            var secondTask = factory.Group(3);
             Console.WriteLine($"Second Task Result: {secondTask.TotalPriorityScore()}."); // Second Task Result: 2620.
         }
     }

@@ -52,7 +52,7 @@ namespace rucksack_reorganization_tests.Logic
         {
             // arrange
             var factory = new ReorganizationFactory(fileName);
-            var reorganization = factory.Group();
+            var reorganization = factory.Group(3);
 
             // act
             var totalScore = reorganization.TotalPriorityScore();

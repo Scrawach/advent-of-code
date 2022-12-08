@@ -19,10 +19,10 @@ namespace rucksack_reorganization_src.Factory
         public RucksackReorganization Single() =>
             Create(new RucksackTextStorage(CreateText()));
 
-        public RucksackReorganization Group() =>
-            Create(new SeveralRucksacksTextStorage(CreateText()));
+        public RucksackReorganization Group(int count) =>
+            Create(new SeveralRucksacksTextStorage(CreateText(), count));
 
-        private RucksackReorganization Create(IRucksackStorage storage) =>
+        private static RucksackReorganization Create(IRucksackStorage storage) =>
             new RucksackReorganization(storage, new Priority());
 
         private Text CreateText() =>
