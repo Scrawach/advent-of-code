@@ -10,8 +10,11 @@ namespace rucksack_reorganization_tests
         [TestCaseSource(typeof(PriorityDataSource))]
         public void WhenConvertSymbol_ThenShouldReturnItPriority(char input, int expected)
         {
+            // arrange
+            var priority = new Priority();
+
             // act
-            var code = Priority.Convert(input);
+            var code = priority.Convert(input);
 
             // answer
             code.Should().Be(expected);
