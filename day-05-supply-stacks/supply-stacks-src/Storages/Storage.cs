@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
+using supply_stacks_src.Storages.Abstract;
 
-namespace supply_stacks_src
+namespace supply_stacks_src.Storages
 {
     public class Storage : IStorage
     {

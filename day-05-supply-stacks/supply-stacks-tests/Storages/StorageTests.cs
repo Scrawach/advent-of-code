@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using FluentAssertions;
 using NUnit.Framework;
-using supply_stacks_src;
+using supply_stacks_src.Storages;
 
-namespace supply_stacks_tests
+namespace supply_stacks_tests.Storages
 {
     public class StorageTests
     {

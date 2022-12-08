@@ -1,4 +1,4 @@
-namespace supply_stacks_src
+namespace supply_stacks_src.Storages.Abstract
 {
     public interface IStorage
     {
