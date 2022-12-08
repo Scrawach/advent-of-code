@@ -1,4 +1,4 @@
-namespace rucksack_reorganization_src
+namespace rucksack_reorganization_src.Logic.Abstract
 {
     public interface IPriority
     {

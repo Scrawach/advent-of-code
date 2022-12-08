@@ -1,9 +1,9 @@
 using System.Collections;
 using FluentAssertions;
 using NUnit.Framework;
-using rucksack_reorganization_src;
+using rucksack_reorganization_src.Logic;
 
-namespace rucksack_reorganization_tests
+namespace rucksack_reorganization_tests.Logic
 {
     public class PriorityTests
     {
