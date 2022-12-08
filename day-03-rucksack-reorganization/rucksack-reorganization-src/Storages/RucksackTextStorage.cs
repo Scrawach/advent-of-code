@@ -16,6 +16,10 @@ namespace rucksack_reorganization_src.Storages
         public IEnumerable<IRucksack> All() =>
             _text
                 .Lines()
-                .Select(line => new Rucksack(line[..(line.Length/2)], line[(line.Length/2)..]));
+                .Select(line =>
+                {
+                    var length = line.Length / 2;
+                    return new Rucksack(line[..length], line[length..]);
+                });
     }
 }
