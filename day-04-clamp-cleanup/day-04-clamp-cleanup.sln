@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clamp-cleanup-tests", "clamp-cleanup-tests\clamp-cleanup-tests.csproj", "{1131CD1C-39FE-4B8D-BDFC-BBB12B97B26A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clamp-cleanup-src", "clamp-cleanup-src\clamp-cleanup-src.csproj", "{CF7DD1CB-09F3-4A28-A33B-A19EC8AFFE52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1131CD1C-39FE-4B8D-BDFC-BBB12B97B26A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1131CD1C-39FE-4B8D-BDFC-BBB12B97B26A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1131CD1C-39FE-4B8D-BDFC-BBB12B97B26A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1131CD1C-39FE-4B8D-BDFC-BBB12B97B26A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF7DD1CB-09F3-4A28-A33B-A19EC8AFFE52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF7DD1CB-09F3-4A28-A33B-A19EC8AFFE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF7DD1CB-09F3-4A28-A33B-A19EC8AFFE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF7DD1CB-09F3-4A28-A33B-A19EC8AFFE52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
