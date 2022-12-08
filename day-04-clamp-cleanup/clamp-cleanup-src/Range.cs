@@ -12,6 +12,9 @@ namespace clamp_cleanup_src
         }
         
         public bool Contains(Range other) =>
-            false;
+            other._start >= _start && other._end <= _end;
+
+        public bool IsOverlap(Range other) =>
+            other._end >= _start && other._start <= _end;
     }
 }
