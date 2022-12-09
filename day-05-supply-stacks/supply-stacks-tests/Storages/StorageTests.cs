@@ -75,9 +75,9 @@ namespace supply_stacks_tests.Storages
         {
             public IEnumerator GetEnumerator()
             {
-                yield return new object[] {InitialState(), 0, 'N'};
-                yield return new object[] {InitialState(), 1, 'D'};
-                yield return new object[] {InitialState(), 2, 'P'};
+                yield return new object[] {InitialState(), 1, 'N'};
+                yield return new object[] {InitialState(), 2, 'D'};
+                yield return new object[] {InitialState(), 3, 'P'};
             }
         }
         
@@ -85,9 +85,9 @@ namespace supply_stacks_tests.Storages
         {
             public IEnumerator GetEnumerator()
             {
-                yield return new object[] {InitialState(), 'J', 0, "JDP"};
-                yield return new object[] {InitialState(), 'J', 1, "NJP"};
-                yield return new object[] {InitialState(), 'J', 2, "NDJ"};
+                yield return new object[] {InitialState(), 'J', 1, "JDP"};
+                yield return new object[] {InitialState(), 'J', 2, "NJP"};
+                yield return new object[] {InitialState(), 'J', 3, "NDJ"};
             }
         }
 
@@ -95,16 +95,16 @@ namespace supply_stacks_tests.Storages
         {
             public IEnumerator GetEnumerator()
             {
-                yield return new object[] {InitialState(), 0, 0, "NDP"};
                 yield return new object[] {InitialState(), 1, 1, "NDP"};
                 yield return new object[] {InitialState(), 2, 2, "NDP"};
-                yield return new object[] {InitialState(), 1, 2, "NCD"};
-                yield return new object[] {InitialState(), 1, 0, "DCP"};
-                yield return new object[] {InitialState(), 2, 0, "PD" };
+                yield return new object[] {InitialState(), 3, 3, "NDP"};
+                yield return new object[] {InitialState(), 2, 3, "NCD"};
+                yield return new object[] {InitialState(), 2, 1, "DCP"};
+                yield return new object[] {InitialState(), 3, 1, "PD" };
             }
         }
         
-        private static Stack<char>[] InitialState() =>
+        internal static Stack<char>[] InitialState() =>
             new[]
             {
                 CreateStack('Z', 'N'),

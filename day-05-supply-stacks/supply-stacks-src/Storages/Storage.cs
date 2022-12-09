@@ -12,10 +12,10 @@ namespace supply_stacks_src.Storages
             _stacks = stacks;
 
         public char Take(int @from) =>
-            _stacks[@from].Pop();
+            _stacks[@from - 1].Pop();
 
         public void Put(char symbol, int to) =>
-            _stacks[to].Push(symbol);
+            _stacks[to - 1].Push(symbol);
 
         public string Top()
         {
