@@ -9,6 +9,7 @@ using NUnit.Framework;
 using supply_stacks_src.Storages;
 using supply_stacks_src.Storages.Abstract;
 using supply_stacks_src.Vehicles.Abstract;
+using supply_stacks_tests.Utils;
 
 namespace supply_stacks_tests.Storages
 {

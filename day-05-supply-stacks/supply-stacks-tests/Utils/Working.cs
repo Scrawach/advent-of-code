@@ -1,6 +1,6 @@
 using System;
 
-namespace supply_stacks_tests
+namespace supply_stacks_tests.Utils
 {
     public static class Working
     {
