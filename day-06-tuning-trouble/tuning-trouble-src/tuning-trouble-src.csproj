@@ -3,6 +3,7 @@
     <PropertyGroup>
         <TargetFramework>netcoreapp3.0</TargetFramework>
         <RootNamespace>tuning_trouble_src</RootNamespace>
+        <OutputType>Exe</OutputType>
     </PropertyGroup>
 
 </Project>
