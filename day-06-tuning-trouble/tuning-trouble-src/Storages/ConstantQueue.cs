@@ -21,7 +21,7 @@ namespace tuning_trouble_src.Storages
         
         public bool IsUnique()
         {
-            var hash = new HashSet<TValue>();
+            var hash = new HashSet<TValue>(_values.Length);
             
             foreach (var value in _values)
             {
