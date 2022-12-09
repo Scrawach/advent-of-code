@@ -5,10 +5,14 @@ namespace tuning_trouble_src.Storages
     public class ConstantQueue<TValue>
     {
         private readonly TValue[] _values;
+        private readonly HashSet<TValue> _map;
         private int _head;
 
-        public ConstantQueue(int capacity) =>
+        public ConstantQueue(int capacity)
+        {
             _values = new TValue[capacity];
+            _map = new HashSet<TValue>(capacity);
+        }
 
         public void Enqueue(TValue value)
         {
@@ -21,14 +25,14 @@ namespace tuning_trouble_src.Storages
         
         public bool IsUnique()
         {
-            var hash = new HashSet<TValue>(_values.Length);
-            
+            _map.Clear();
+
             foreach (var value in _values)
             {
-                if (hash.Contains(value))
+                if (_map.Contains(value))
                     return false;
                 
-                hash.Add(value);
+                _map.Add(value);
             }
 
             return true;
