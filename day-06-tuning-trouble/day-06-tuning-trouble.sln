@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tuning-trouble-tests", "tuning-trouble-tests\tuning-trouble-tests.csproj", "{D50EC3D7-5D9C-4BBD-9CED-7EADD19A8C97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tuning-trouble-src", "tuning-trouble-src\tuning-trouble-src.csproj", "{526E0C82-ADF0-45E4-8B39-DDD92439CC38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D50EC3D7-5D9C-4BBD-9CED-7EADD19A8C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D50EC3D7-5D9C-4BBD-9CED-7EADD19A8C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D50EC3D7-5D9C-4BBD-9CED-7EADD19A8C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D50EC3D7-5D9C-4BBD-9CED-7EADD19A8C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{526E0C82-ADF0-45E4-8B39-DDD92439CC38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526E0C82-ADF0-45E4-8B39-DDD92439CC38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526E0C82-ADF0-45E4-8B39-DDD92439CC38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526E0C82-ADF0-45E4-8B39-DDD92439CC38}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
