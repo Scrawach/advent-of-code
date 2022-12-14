@@ -3,6 +3,7 @@
     <PropertyGroup>
         <TargetFramework>netcoreapp3.0</TargetFramework>
         <RootNamespace>no_space_left_on_device_src</RootNamespace>
+        <OutputType>Exe</OutputType>
     </PropertyGroup>
 
 </Project>
