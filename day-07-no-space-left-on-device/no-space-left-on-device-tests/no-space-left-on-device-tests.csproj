@@ -15,4 +15,8 @@
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\no-space-left-on-device-src\no-space-left-on-device-src.csproj" />
+    </ItemGroup>
+
 </Project>
