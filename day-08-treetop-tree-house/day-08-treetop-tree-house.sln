@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "treetop-tree-house-src", "treetop-tree-house-src\treetop-tree-house-src.csproj", "{6E8B9CDF-914F-48E3-9B5F-59254E23E9DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "treetop-tree-house-tests", "treetop-tree-house-tests\treetop-tree-house-tests.csproj", "{0970D09A-EFCB-4FC5-B44F-3CC81ED8AAF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E8B9CDF-914F-48E3-9B5F-59254E23E9DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E8B9CDF-914F-48E3-9B5F-59254E23E9DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E8B9CDF-914F-48E3-9B5F-59254E23E9DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E8B9CDF-914F-48E3-9B5F-59254E23E9DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0970D09A-EFCB-4FC5-B44F-3CC81ED8AAF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0970D09A-EFCB-4FC5-B44F-3CC81ED8AAF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0970D09A-EFCB-4FC5-B44F-3CC81ED8AAF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0970D09A-EFCB-4FC5-B44F-3CC81ED8AAF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
