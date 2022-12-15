@@ -19,8 +19,8 @@ namespace no_space_left_on_device_src.Solves
         public int Solve()
         {
             var usedSpace = _device.Root.Value.Size;
-            var border = _targetUnusedSpace - (_diskSpace - usedSpace);
-            return _device.Root.Select(file => file.Size).Where(size => size >= border).Min();
+            var target = _targetUnusedSpace - (_diskSpace - usedSpace);
+            return _device.Root.Select(file => file.Size).Where(size => size >= target).Min();
         }
     }
 }
