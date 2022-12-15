@@ -15,13 +15,13 @@ namespace no_space_left_on_device_src.Commands
             switch (_target)
             {
                 case "..":
-                    device.MoveToParent();
+                    device.ToPrevious();
                     break;
                 case "/":
-                    device.MoveToRoot();
+                    device.ToRoot();
                     break;
                 default:
-                    device.MoveTo(_target);
+                    device.To(_target);
                     break;
             }
         }

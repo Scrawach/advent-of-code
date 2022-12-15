@@ -26,16 +26,16 @@ namespace no_space_left_on_device_src.Disk
             }
         }
 
-        public void MoveTo(string directoryName)
+        public void To(string directoryName)
         {
             if (TryFindDirectory(directoryName, out var directory))
                 Current = directory;
         }
 
-        public void MoveToRoot() =>
+        public void ToRoot() =>
             Current = Root;
 
-        public void MoveToParent() =>
+        public void ToPrevious() =>
             Current = Current.Parent;
 
         private bool TryFindDirectory(string name, out Tree<IDirectory> directory)

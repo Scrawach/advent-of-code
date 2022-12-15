@@ -9,8 +9,8 @@ namespace no_space_left_on_device_src.Disk.Abstract
         void CreateDirectory(string name);
             
         void CreateFile(int size);
-        void MoveTo(string directoryName);
-        void MoveToRoot();
-        void MoveToParent();
+        void To(string directoryName);
+        void ToRoot();
+        void ToPrevious();
     }
 }
