@@ -3,6 +3,7 @@ using System.IO;
 using no_space_left_on_device_src.Disk;
 using no_space_left_on_device_src.Disk.Abstract;
 using no_space_left_on_device_src.Storages;
+using Directory = no_space_left_on_device_src.Disk.Directory;
 
 namespace no_space_left_on_device_src.Solves
 {
@@ -25,9 +26,9 @@ namespace no_space_left_on_device_src.Solves
         private IDevice CreateDevice(string fileName)
         {
             var path = Path.Combine(Directory, fileName);
-            var device = new Device();
+            var device = new Device(new Tree<IDirectory>(new Directory("/")));
             var text = new Text(path);
-            var commands = new CommandTextStorage(device, text);
+            var commands = new CommandTextStorage(text);
             foreach (var command in commands.All()) 
                 command.Execute(device);
             return device;

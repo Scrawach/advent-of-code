@@ -2,9 +2,9 @@ namespace no_space_left_on_device_src.Disk.Abstract
 {
     public interface IDevice
     {
-        Tree<IDirectory> Root { get; }
+        ITree<IDirectory> Root { get; }
             
-        Tree<IDirectory> Current { get; }
+        ITree<IDirectory> Current { get; }
 
         void CreateDirectory(string name);
             

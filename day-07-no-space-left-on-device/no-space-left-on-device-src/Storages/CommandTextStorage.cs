@@ -8,14 +8,10 @@ namespace no_space_left_on_device_src.Storages
 {
     public class CommandTextStorage
     {
-        private readonly IDevice _device;
         private readonly IText _text;
 
-        public CommandTextStorage(IDevice device, IText text)
-        {
-            _device = device;
+        public CommandTextStorage(IText text) =>
             _text = text;
-        }
 
         public IEnumerable<ICommand> All()
         {

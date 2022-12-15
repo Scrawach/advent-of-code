@@ -5,12 +5,12 @@ namespace no_space_left_on_device_src.Disk
 {
     public class Device : IDevice
     {
-        public Device() =>
-            Current = Root = new Tree<IDirectory>(new Directory("/"));
+        public Device(ITree<IDirectory> root) =>
+            Current = Root = root;
 
-        public Tree<IDirectory> Root { get; }
+        public ITree<IDirectory> Root { get; }
             
-        public Tree<IDirectory> Current { get; private set; }
+        public ITree<IDirectory> Current { get; private set; }
 
         public void CreateDirectory(string name) =>
             Current.AddChild(new Directory(name));
@@ -38,9 +38,9 @@ namespace no_space_left_on_device_src.Disk
         public void ToPrevious() =>
             Current = Current.Parent;
 
-        private bool TryFindDirectory(string name, out Tree<IDirectory> directory)
+        private bool TryFindDirectory(string name, out ITree<IDirectory> directory)
         {
-            directory = Current.Children.FirstOrDefault(dir => dir.Value.Name == name);
+            directory = Current.Children.FirstOrDefault(tree => tree.Value.Name == name);
             return directory != null;
         }
     }
