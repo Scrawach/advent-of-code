@@ -3,6 +3,7 @@
     <PropertyGroup>
         <TargetFramework>netcoreapp3.0</TargetFramework>
         <RootNamespace>treetop_tree_house_src</RootNamespace>
+        <OutputType>Exe</OutputType>
     </PropertyGroup>
 
 </Project>
