@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rope-bridge-tests", "rope-bridge-tests\rope-bridge-tests.csproj", "{FE98DDFF-563C-4C1A-B361-2A9BFBE36B96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rope-bridge-src", "rope-bridge-src\rope-bridge-src.csproj", "{6F27C22C-F31B-498E-910E-CF2010534448}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE98DDFF-563C-4C1A-B361-2A9BFBE36B96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE98DDFF-563C-4C1A-B361-2A9BFBE36B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE98DDFF-563C-4C1A-B361-2A9BFBE36B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE98DDFF-563C-4C1A-B361-2A9BFBE36B96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F27C22C-F31B-498E-910E-CF2010534448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F27C22C-F31B-498E-910E-CF2010534448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F27C22C-F31B-498E-910E-CF2010534448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F27C22C-F31B-498E-910E-CF2010534448}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
