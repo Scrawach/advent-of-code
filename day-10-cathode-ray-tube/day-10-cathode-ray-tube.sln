@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cathode-ray-tube-tests", "cathode-ray-tube-tests\cathode-ray-tube-tests.csproj", "{5DB67CD7-F258-48D0-86AD-DF06B95F5960}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cathode-ray-tube-src", "cathode-ray-tube-src\cathode-ray-tube-src.csproj", "{5437A03D-32B5-4D67-931A-EFFE26ADB885}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DB67CD7-F258-48D0-86AD-DF06B95F5960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB67CD7-F258-48D0-86AD-DF06B95F5960}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB67CD7-F258-48D0-86AD-DF06B95F5960}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB67CD7-F258-48D0-86AD-DF06B95F5960}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5437A03D-32B5-4D67-931A-EFFE26ADB885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5437A03D-32B5-4D67-931A-EFFE26ADB885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5437A03D-32B5-4D67-931A-EFFE26ADB885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5437A03D-32B5-4D67-931A-EFFE26ADB885}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
