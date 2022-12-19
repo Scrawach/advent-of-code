@@ -21,8 +21,4 @@
       <ProjectReference Include="..\rope-bridge-src\rope-bridge-src.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Commands" />
-    </ItemGroup>
-
 </Project>
