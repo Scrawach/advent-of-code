@@ -19,5 +19,19 @@ namespace rope_bridge_tests.Solves
             // answer
             count.Should().Be(expected);
         }
+
+        [TestCase("example-with-9-length-rope.txt", 9, 36)]
+        public void WhenReadCommands_ThenShouldSimulateIt_AndReturnCountOfUniqueTailPositions_WithVariousRopeLength(string fileName, int ropeLength, int expected)
+        {
+            // arrange
+            var factory = new SolvesFactory(fileName);
+            var series = factory.SeriesOfMotions();
+
+            // act
+            var count = series.Simulate(ropeLength);
+
+            // answer
+            count.Should().Be(expected);
+        }
     }
 }

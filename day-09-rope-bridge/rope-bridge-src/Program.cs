@@ -11,6 +11,7 @@ namespace rope_bridge_src
 
             var series = factory.SeriesOfMotions();
             Console.WriteLine($"First Task Result: {series.Simulate()}."); // First Task Result: 6384.
+            Console.WriteLine($"First Task Result: {series.Simulate(9)}."); // First Task Result: 2734.
         }
     }
 }
