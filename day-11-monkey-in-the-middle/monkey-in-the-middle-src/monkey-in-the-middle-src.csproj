@@ -3,6 +3,7 @@
     <PropertyGroup>
         <TargetFramework>netcoreapp3.0</TargetFramework>
         <RootNamespace>monkey_in_the_middle_src</RootNamespace>
+        <OutputType>Exe</OutputType>
     </PropertyGroup>
 
 </Project>
