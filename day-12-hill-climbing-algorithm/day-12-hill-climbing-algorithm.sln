@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hill-climbing-algorithm-src", "hill-climbing-algorithm-src\hill-climbing-algorithm-src.csproj", "{EC550441-4D76-42C3-9E51-705D6AF79117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hill-climbing-algorithm-tests", "hill-climbing-algorithm-tests\hill-climbing-algorithm-tests.csproj", "{6D4E9E77-AA9B-443A-871D-237DC141FFD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC550441-4D76-42C3-9E51-705D6AF79117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC550441-4D76-42C3-9E51-705D6AF79117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC550441-4D76-42C3-9E51-705D6AF79117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC550441-4D76-42C3-9E51-705D6AF79117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D4E9E77-AA9B-443A-871D-237DC141FFD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D4E9E77-AA9B-443A-871D-237DC141FFD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D4E9E77-AA9B-443A-871D-237DC141FFD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D4E9E77-AA9B-443A-871D-237DC141FFD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
