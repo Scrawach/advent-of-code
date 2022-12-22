@@ -24,7 +24,7 @@ namespace distress_signal_tests
 
         [TestCase("[[1],[2,3,4]]", "[[1],4]", true)]
         [TestCase("[[1],4]", "[[1],[2,3,4]]", false)]
-        public void WhenBothValuesAreList_ThenLeftListRunsOutOfItemsFirst(string left, string right, bool expected)
+        public void WhenOneValueIsAnInteger_ThenShouldConvertItToList_AndRetry(string left, string right, bool expected)
         {
             // arrange
             var packet = new Packet(left, right);
