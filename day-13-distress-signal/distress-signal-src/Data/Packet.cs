@@ -1,6 +1,6 @@
 namespace distress_signal_src.Data
 {
-    public class Packet
+    public class Packet : IPacket
     {
         private readonly string _left;
         private readonly string _right;
