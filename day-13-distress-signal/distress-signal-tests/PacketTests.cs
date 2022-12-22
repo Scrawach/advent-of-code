@@ -6,8 +6,8 @@ namespace distress_signal_tests
 {
     public class PacketTests
     {
-        [TestCase("[1,1,3,1,1]", "[1,1,5,1,1]", true)]
-        [TestCase("[1,1,5,1,1]", "[1,1,3,1,1]", false)]
+        [TestCase("[3]", "[5]", true)]
+        [TestCase("[5]", "[3]", false)]
         public void WhenBothValuesAreIntegers_ThenLowerIntegersShouldComeFirst(string left, string right, bool expected)
         {
             // arrange
