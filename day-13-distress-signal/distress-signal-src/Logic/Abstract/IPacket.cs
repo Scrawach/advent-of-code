@@ -1,4 +1,4 @@
-namespace distress_signal_src.Data
+namespace distress_signal_src.Logic.Abstract
 {
     public interface IPacket
     {

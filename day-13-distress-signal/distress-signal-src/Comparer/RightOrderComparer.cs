@@ -1,18 +1,14 @@
-namespace distress_signal_src.Data
+using System.Collections.Generic;
+
+namespace distress_signal_src.Comparer
 {
-    public class Packet : IPacket
+    public class RightOrderComparer : IComparer<string>
     {
-        private readonly string _left;
-        private readonly string _right;
-
-        public Packet(string left, string right)
+        public int Compare(string left, string right)
         {
-            _left = left;
-            _right = right;
+            if (left == right) return 0;
+            return IsRightOrder(left, right) ? -1 : 1;
         }
-
-        public bool IsRightOrder() =>
-            IsRightOrder(_left, _right);
 
         private static bool IsRightOrder(string left, string right)
         {
@@ -24,8 +20,8 @@ namespace distress_signal_src.Data
                 var (l, r) when l == r => IsRightOrder(leftTail, rightTail),
                 (_, ']') => false,
                 (']', _) => true,
-                ('[', _) => IsRightOrder(leftTail, right),
-                (_, '[') => IsRightOrder(left, rightTail),
+                ('[', var r) => IsRightOrder(leftTail, $"{r}]{rightTail}"),
+                (var l, '[') => IsRightOrder($"{l}]{leftTail}", rightTail),
                 var (l, r) => l < r,
             };
         }
