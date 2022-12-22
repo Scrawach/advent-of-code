@@ -24,10 +24,10 @@ namespace distress_signal_src.Data
             return (leftHead, rightHead) switch
             {
                 var (l, r) when l == r => IsRightOrder(leftTail, rightTail),
-                ('[', _) => IsRightOrder(leftTail, right),
-                (_, '[') => IsRightOrder(left, rightTail),
                 (_, ']') => false,
                 (']', _) => true,
+                ('[', _) => IsRightOrder(leftTail, right),
+                (_, '[') => IsRightOrder(left, rightTail),
                 var (l, r) => l < r,
             };
         }

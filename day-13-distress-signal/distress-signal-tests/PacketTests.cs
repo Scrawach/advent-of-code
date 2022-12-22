@@ -49,5 +49,35 @@ namespace distress_signal_tests
             // answer
             isRightOrder.Should().Be(expected);
         }
+
+        [TestCase("[[[]]]", "[[]]", false)]
+        [TestCase("[[]]", "[[[]]]", true)]
+        public void WhenEmptyLists_ThenRightList_ShouldRunOfItemsFirst(string left, string right, bool expected)
+        {
+            // arrange
+            var packet = new Packet(left, right);
+
+            // act
+            var isRightOrder = packet.IsRightOrder();
+
+            // answer
+            isRightOrder.Should().Be(expected);
+        }
+
+        [TestCase("[9]", "[[8,7,6]]", false)]
+        [TestCase("[[4,4],4,4]", "[[4,4],4,4,4]", true)]
+        [TestCase("[]", "[3]", true)]
+        [TestCase("[1,[2,[3,[4,[5,6,7]]]],8,9]", "[1,[2,[3,[4,[5,6,0]]]],8,9]", false)]
+        public void WhenOtherExampleCases_ThenShouldReturnExpected(string left, string right, bool expected)
+        {
+            // arrange
+            var packet = new Packet(left, right);
+
+            // act
+            var isRightOrder = packet.IsRightOrder();
+
+            // answer
+            isRightOrder.Should().Be(expected);
+        }
     }
 }
