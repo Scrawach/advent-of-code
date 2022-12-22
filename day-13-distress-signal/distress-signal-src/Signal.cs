@@ -11,7 +11,15 @@ namespace distress_signal_src
 
         public int SumOfIndicesRightPairs()
         {
-            return 0;
+            var sum = 0;
+            
+            for (var i = 0; i < _packets.Length; i++)
+            {
+                if (_packets[i].IsRightOrder())
+                    sum += (i + 1);
+            }
+
+            return sum;
         }
     }
 }
