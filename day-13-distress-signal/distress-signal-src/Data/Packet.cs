@@ -1,5 +1,3 @@
-using System;
-
 namespace distress_signal_src.Data
 {
     public class Packet

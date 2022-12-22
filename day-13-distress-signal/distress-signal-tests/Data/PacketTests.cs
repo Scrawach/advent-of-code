@@ -2,7 +2,7 @@ using distress_signal_src.Data;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace distress_signal_tests
+namespace distress_signal_tests.Data
 {
     public class PacketTests
     {
