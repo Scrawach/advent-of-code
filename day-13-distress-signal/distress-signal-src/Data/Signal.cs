@@ -1,6 +1,4 @@
-using distress_signal_src.Data;
-
-namespace distress_signal_src
+namespace distress_signal_src.Data
 {
     public class Signal
     {

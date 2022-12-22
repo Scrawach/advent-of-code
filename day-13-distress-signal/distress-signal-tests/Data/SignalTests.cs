@@ -1,11 +1,10 @@
 using System.Collections.Generic;
-using distress_signal_src;
 using distress_signal_src.Data;
 using FluentAssertions;
 using Moq;
 using NUnit.Framework;
 
-namespace distress_signal_tests
+namespace distress_signal_tests.Data
 {
     public class SignalTests
     {
