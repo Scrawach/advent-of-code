@@ -1,3 +1,5 @@
+using System;
+
 namespace distress_signal_src.Data
 {
     public class Packet
@@ -12,6 +14,18 @@ namespace distress_signal_src.Data
         }
 
         public bool IsRightOrder() =>
-            true;
+            IsRightOrder(_left, _right);
+
+        private bool IsRightOrder(string left, string right)
+        {
+            var (leftHead, leftTail) = (left[0], left[1..]);
+            var (rightHead, rightTail) = (right[0], right[1..]);
+
+            return (leftHead, rightHead) switch
+            {
+                var (l, r) when l == r => IsRightOrder(leftTail, rightTail),
+                var (l, r) => l < r,
+            };
+        }
     }
 }
