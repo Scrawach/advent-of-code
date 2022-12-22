@@ -22,6 +22,20 @@ namespace distress_signal_tests
             isRightOrder.Should().Be(expected);
         }
 
+        [TestCase("[7,7,7,7]", "[7,7,7]", false)]
+        [TestCase("[7,7,7]", "[7,7,7,7]", true)]
+        public void WhenBothValuesAreLists_ThenShouldCompareIt_WhileRightListRunOfItemsFirst(string left, string right, bool expected)
+        {
+            // arrange
+            var packet = new Packet(left, right);
+
+            // act
+            var isRightOrder = packet.IsRightOrder();
+
+            // answer
+            isRightOrder.Should().Be(expected);
+        }
+
         [TestCase("[[1],[2,3,4]]", "[[1],4]", true)]
         [TestCase("[[1],4]", "[[1],[2,3,4]]", false)]
         public void WhenOneValueIsAnInteger_ThenShouldConvertItToList_AndRetry(string left, string right, bool expected)

@@ -26,6 +26,8 @@ namespace distress_signal_src.Data
                 var (l, r) when l == r => IsRightOrder(leftTail, rightTail),
                 ('[', _) => IsRightOrder(leftTail, right),
                 (_, '[') => IsRightOrder(left, rightTail),
+                (_, ']') => false,
+                (']', _) => true,
                 var (l, r) => l < r,
             };
         }
