@@ -16,7 +16,7 @@ namespace distress_signal_src.Data
         public bool IsRightOrder() =>
             IsRightOrder(_left, _right);
 
-        private bool IsRightOrder(string left, string right)
+        private static bool IsRightOrder(string left, string right)
         {
             var (leftHead, leftTail) = (left[0], left[1..]);
             var (rightHead, rightTail) = (right[0], right[1..]);
@@ -24,6 +24,8 @@ namespace distress_signal_src.Data
             return (leftHead, rightHead) switch
             {
                 var (l, r) when l == r => IsRightOrder(leftTail, rightTail),
+                ('[', _) => IsRightOrder(leftTail, right),
+                (_, '[') => IsRightOrder(left, rightTail),
                 var (l, r) => l < r,
             };
         }

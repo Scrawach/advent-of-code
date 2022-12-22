@@ -8,7 +8,23 @@ namespace distress_signal_tests
     {
         [TestCase("[3]", "[5]", true)]
         [TestCase("[5]", "[3]", false)]
+        [TestCase("[1, 3, 1]", "[1, 5, 1]", true)]
+        [TestCase("[1, 5, 1]", "[1, 3, 1]", false)]
         public void WhenBothValuesAreIntegers_ThenLowerIntegersShouldComeFirst(string left, string right, bool expected)
+        {
+            // arrange
+            var packet = new Packet(left, right);
+
+            // act
+            var isRightOrder = packet.IsRightOrder();
+
+            // answer
+            isRightOrder.Should().Be(expected);
+        }
+
+        [TestCase("[[1],[2,3,4]]", "[[1],4]", true)]
+        [TestCase("[[1],4]", "[[1],[2,3,4]]", false)]
+        public void WhenBothValuesAreList_ThenLeftListRunsOutOfItemsFirst(string left, string right, bool expected)
         {
             // arrange
             var packet = new Packet(left, right);
