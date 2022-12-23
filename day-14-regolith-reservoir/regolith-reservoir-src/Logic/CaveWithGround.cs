@@ -1,4 +1,3 @@
-using System.Linq;
 using regolith_reservoir_src.Data;
 using regolith_reservoir_src.Extensions;
 using regolith_reservoir_src.Logic.Abstract;
@@ -7,11 +6,15 @@ namespace regolith_reservoir_src.Logic
 {
     public class CaveWithGround : ICave
     {
+        private readonly int _addExtraHeight;
         private readonly ILine[] _lines;
         private ILine _ground;
 
-        public CaveWithGround(params ILine[] lines) =>
+        public CaveWithGround(int addExtraHeight, params ILine[] lines)
+        {
+            _addExtraHeight = addExtraHeight;
             _lines = lines;
+        }
 
         public int Height { get; private set; }
 
@@ -33,7 +36,7 @@ namespace regolith_reservoir_src.Logic
         
         private ILine FindGround()
         {
-            Height = _lines.HighestPoint() + 2;
+            Height = _lines.HighestPoint() + _addExtraHeight;
 
             return new RectangularLine(new[]
             {

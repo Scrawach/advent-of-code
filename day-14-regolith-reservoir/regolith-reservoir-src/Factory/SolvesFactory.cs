@@ -24,7 +24,7 @@ namespace regolith_reservoir_src.Factory
             new FirstSolve(new SandSimulation(new Cave(CreateWalls()), pouringPoint));
 
         public SecondSolve SecondSolve(Vector2 pouringPoint) =>
-            new SecondSolve(new SandSimulation(new CaveWithGround(CreateWalls()), pouringPoint));
+            new SecondSolve(new SandSimulation(new CaveWithGround(2, CreateWalls()), pouringPoint));
 
         private ILine[] CreateWalls()
         {
