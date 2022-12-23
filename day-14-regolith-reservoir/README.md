@@ -126,7 +126,8 @@ Using your scan, simulate the falling sand. *How many units of sand come to rest
 	Your puzzle answer was <strong><em>817</em></strong>.
 </details>
 
---- Part Two ---
+### --- Part Two ---
+
 You realize you misread the scan. There isn't an endless void at the bottom of the scan - there's floor, and you're standing on it!
 
 You don't have time to scan the floor, so assume the floor is an infinite horizontal line with a y coordinate equal to *two plus the highest* `y` *coordinate* of any point in your scan.
