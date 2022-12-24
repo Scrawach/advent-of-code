@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using hill_climbing_algorithm_src.Logic;
 using hill_climbing_algorithm_src.Logic.Abstract;
 using hill_climbing_algorithm_src.Solves;
@@ -9,8 +10,10 @@ namespace hill_climbing_algorithm_src.Factory
 {
     public class PathFactory
     {
+        private static readonly string BinDirectory = $"{Path.DirectorySeparatorChar}bin";
+        
         private static readonly string WorkingDirectory = 
-            Environment.CurrentDirectory[..Environment.CurrentDirectory.IndexOf("/bin/", StringComparison.Ordinal)];
+            Environment.CurrentDirectory[..Environment.CurrentDirectory.IndexOf(BinDirectory, StringComparison.Ordinal)];
 
         private readonly string _fileName;
 

@@ -11,7 +11,7 @@ namespace distress_signal_src.Factory
     public class SolvesFactory
     {
         private static readonly string WorkingDirectory = 
-            Environment.CurrentDirectory[..Environment.CurrentDirectory.IndexOf("/bin/", StringComparison.Ordinal)];
+            Environment.CurrentDirectory[..Environment.CurrentDirectory.IndexOf("bin", StringComparison.Ordinal)];
         
         private readonly string _fileName;
 
