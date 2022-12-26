@@ -6,8 +6,4 @@
         <RootNamespace>beacon_exclusion_zone_src</RootNamespace>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Folder Include="Factory" />
-    </ItemGroup>
-
 </Project>

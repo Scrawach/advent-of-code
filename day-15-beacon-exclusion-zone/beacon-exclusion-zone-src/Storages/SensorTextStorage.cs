@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using beacon_exclusion_zone_src.Data;
-using beacon_exclusion_zone_src.Extensions;
 using beacon_exclusion_zone_src.Logic;
 using beacon_exclusion_zone_src.Storages.Abstract;
 
@@ -22,8 +21,7 @@ namespace beacon_exclusion_zone_src.Storages
             foreach (var line in _text.Lines())
             {
                 var (sensorPosition, beaconPosition) = Parse(regex.Matches(line));
-                var sensorRadius = sensorPosition.ManhattanDistance(to: beaconPosition);
-                yield return new Sensor(sensorPosition, sensorRadius);
+                yield return new Sensor(sensorPosition, beaconPosition);
             }
         }
 
