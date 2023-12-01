@@ -41,6 +41,7 @@ public class FirstAndLastNumbersWithText : IStringParser
                     firstNumber = substringNumber;
                 secondNumber = substringNumber;
                 buffer.Clear();
+                buffer.Append(symbol);
             }
         }
 
