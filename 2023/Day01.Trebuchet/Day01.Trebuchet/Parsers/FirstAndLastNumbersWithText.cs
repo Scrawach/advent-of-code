@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Day01.Trebuchet;
+namespace Day01.Trebuchet.Parsers;
 
 public class FirstAndLastNumbersWithText : IStringParser
 {

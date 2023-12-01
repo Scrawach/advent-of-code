@@ -1,4 +1,4 @@
-﻿namespace Day01.Trebuchet;
+﻿namespace Day01.Trebuchet.Parsers;
 
 public interface IStringParser
 {

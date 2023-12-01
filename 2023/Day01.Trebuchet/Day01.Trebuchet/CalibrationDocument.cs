@@ -1,4 +1,7 @@
-﻿namespace Day01.Trebuchet;
+﻿using Day01.Trebuchet.Parsers;
+using Day01.Trebuchet.Text;
+
+namespace Day01.Trebuchet;
 
 public class CalibrationDocument
 {

@@ -1,4 +1,6 @@
-﻿using FluentAssertions;
+﻿using Day01.Trebuchet.Parsers;
+using Day01.Trebuchet.Text;
+using FluentAssertions;
 
 namespace Day01.Trebuchet.Tests;
 
