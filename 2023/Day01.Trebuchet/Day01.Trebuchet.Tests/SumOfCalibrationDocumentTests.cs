@@ -24,4 +24,25 @@ public class SumOfCalibrationDocumentTests
         // assert
         result.Should().Be(expected);
     }
+
+    [TestCase("example_text.txt", 281)]
+    [TestCase("task.txt", 54100)]
+    public void WhenTextHasNumbersInLines_ThenShouldReturnSumNumbers_ThanTakenFromFirstAndLastNumber_OrTextCodedNumber_ForEveryLine(string fileName, int expected)
+    {
+        // arrange 
+        var sum = new SumOfCalibrationValues
+        (
+            new CalibrationDocument
+            (
+                new FileText(Path.Combine(Environment.CurrentDirectory, fileName)),
+                new FirstAndLastNumbersWithText()
+            )
+        );
+
+        // act
+        var result = sum.Value();
+
+        // assert
+        result.Should().Be(expected);
+    }
 }
