@@ -25,28 +25,33 @@ public class FirstAndLastNumbersWithText : IStringParser
 
         foreach (var symbol in line)
         {
-            if (char.IsDigit(symbol))
-            {
-                var number = int.Parse(symbol.ToString());
-                if (firstNumber == 0)
-                    firstNumber = number;
-                secondNumber = number;
-            }
-
-            buffer.Append(symbol);
-            var (isHasSubstringNumber, substringNumber) = ParseSubstringNumber(buffer.ToString());
-            if (isHasSubstringNumber)
-            {
-                if (firstNumber == 0)
-                    firstNumber = substringNumber;
-                secondNumber = substringNumber;
-                buffer.Clear();
-                buffer.Append(symbol);
-            }
+            if (char.IsDigit(symbol)) 
+                (firstNumber, secondNumber) = UpdateNumbers(firstNumber, int.Parse(symbol.ToString()));
+            else
+                ParseSubstring(symbol, buffer, parsedNumber =>
+                {
+                    (firstNumber, secondNumber) = UpdateNumbers(firstNumber, parsedNumber);
+                });
         }
 
         return firstNumber * 10 + secondNumber;
     }
+
+    private void ParseSubstring(char symbol, StringBuilder buffer, Action<int> onParsed)
+    {
+        buffer.Append(symbol);
+        var (isHasSubstringNumber, substringNumber) = ParseSubstringNumber(buffer.ToString());
+        
+        if (!isHasSubstringNumber) 
+            return;
+        
+        onParsed(substringNumber);
+        buffer.Clear();
+        buffer.Append(symbol);
+    }
+    
+    private static (int, int) UpdateNumbers(int firstNumber, int nextNumber) =>
+        firstNumber == 0 ? (nextNumber, nextNumber) : (firstNumber, nextNumber);
 
     private (bool, int) ParseSubstringNumber(string line)
     {
