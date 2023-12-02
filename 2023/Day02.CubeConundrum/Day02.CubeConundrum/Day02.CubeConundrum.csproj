@@ -6,12 +6,4 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Folder Include="Text" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\..\Common\Common\Common.csproj" />
-    </ItemGroup>
-
 </Project>

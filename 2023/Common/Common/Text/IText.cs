@@ -1,4 +1,4 @@
-﻿namespace Day01.Trebuchet.Text;
+﻿namespace Common.Text;
 
 public interface IText
 {

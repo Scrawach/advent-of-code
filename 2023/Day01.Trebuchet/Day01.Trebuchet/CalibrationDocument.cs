@@ -1,5 +1,5 @@
-﻿using Day01.Trebuchet.Parsers;
-using Day01.Trebuchet.Text;
+﻿using Common.Text;
+using Day01.Trebuchet.Parsers;
 
 namespace Day01.Trebuchet;
 
