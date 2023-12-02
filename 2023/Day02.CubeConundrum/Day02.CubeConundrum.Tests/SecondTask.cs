@@ -1,6 +1,6 @@
 ﻿using Common.Text;
 using Day02.CubeConundrum.Common;
-using Day02.CubeConundrum.SecondSolve;
+using Day02.CubeConundrum.SecondTask;
 using FluentAssertions;
 
 namespace Day02.CubeConundrum.Tests;

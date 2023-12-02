@@ -1,4 +1,4 @@
-﻿namespace Day02.CubeConundrum.FirstSolve;
+﻿namespace Day02.CubeConundrum.FirstTask;
 
 public class SumOfIdOfPossibleGameSets
 {

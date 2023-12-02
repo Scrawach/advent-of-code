@@ -1,6 +1,6 @@
 ﻿using Day02.CubeConundrum.Common;
 
-namespace Day02.CubeConundrum.FirstSolve;
+namespace Day02.CubeConundrum.FirstTask;
 
 public class LimitsGameSetPolicy : IGameSetPolicy
 {
