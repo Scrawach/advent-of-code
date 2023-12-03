@@ -23,14 +23,18 @@ public class NotPartNumbers
                     if (ContainsDotAround(lines, i, j))
                     {
                         isPartNumber = true;
+                        number.Clear();
                         continue;
                     }
                 }
 
                 if (line[j] == '.')
                 {
-                    yield return NumberFrom(number.ToArray());
-                    number.Clear();
+                    if (number.Count > 0)
+                    {
+                        yield return NumberFrom(number.ToArray());
+                        number.Clear();
+                    }
                     isPartNumber = false;
                 }
             }
