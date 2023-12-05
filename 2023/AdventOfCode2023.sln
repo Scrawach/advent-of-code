@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common\Com
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03.GearRatios", "Day03.GearRatios\Day03.GearRatios\Day03.GearRatios.csproj", "{4C3071EA-3632-46FC-B23C-277F3CD37F03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03.GearRatios.Tests", "Day03.GearRatios\Day03.GearRatios.Tests\Day03.GearRatios.Tests.csproj", "{BEAEEBEB-7A0E-4CD2-83C9-A4888B2E84B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{4C3071EA-3632-46FC-B23C-277F3CD37F03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C3071EA-3632-46FC-B23C-277F3CD37F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C3071EA-3632-46FC-B23C-277F3CD37F03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEAEEBEB-7A0E-4CD2-83C9-A4888B2E84B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEAEEBEB-7A0E-4CD2-83C9-A4888B2E84B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEAEEBEB-7A0E-4CD2-83C9-A4888B2E84B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEAEEBEB-7A0E-4CD2-83C9-A4888B2E84B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
