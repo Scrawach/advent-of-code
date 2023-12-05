@@ -22,4 +22,13 @@
       <ProjectReference Include="..\Day03.GearRatios\Day03.GearRatios.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="example.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="task.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
