@@ -14,6 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03.GearRatios", "Day03.G
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03.GearRatios.Tests", "Day03.GearRatios\Day03.GearRatios.Tests\Day03.GearRatios.Tests.csproj", "{BEAEEBEB-7A0E-4CD2-83C9-A4888B2E84B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04.Scratchcards", "Day04.Scratchcards\Day04.Scratchcards\Day04.Scratchcards.csproj", "{73173701-FC54-465F-879F-0883F7749C01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04.Scratchcards.Tests", "Day04.Scratchcards\Day04.Scratchcards.Tests\Day04.Scratchcards.Tests.csproj", "{4E4A8860-2F2B-4ADB-9E11-349B5E554487}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +52,13 @@ Global
 		{BEAEEBEB-7A0E-4CD2-83C9-A4888B2E84B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEAEEBEB-7A0E-4CD2-83C9-A4888B2E84B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEAEEBEB-7A0E-4CD2-83C9-A4888B2E84B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73173701-FC54-465F-879F-0883F7749C01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73173701-FC54-465F-879F-0883F7749C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73173701-FC54-465F-879F-0883F7749C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73173701-FC54-465F-879F-0883F7749C01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E4A8860-2F2B-4ADB-9E11-349B5E554487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4A8860-2F2B-4ADB-9E11-349B5E554487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4A8860-2F2B-4ADB-9E11-349B5E554487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4A8860-2F2B-4ADB-9E11-349B5E554487}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
