@@ -13,7 +13,7 @@ public class TotalPoints
             .Select(TotalPointsFrom)
             .Sum();
 
-    private int TotalPointsFrom(int winningCount)
+    private static int TotalPointsFrom(int winningCount)
     {
         if (winningCount == 0)
             return 0;
