@@ -2,7 +2,7 @@ using Common.Text;
 
 namespace Day05.IfYouGiveASeedAFertilizer;
 
-public class FileSeeds
+public class FileSeeds : ISeeds
 {
     private readonly IText _text;
 

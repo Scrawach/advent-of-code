@@ -3,9 +3,9 @@ namespace Day05.IfYouGiveASeedAFertilizer;
 public class Locations
 {
     private readonly FileMaps _maps;
-    private readonly FileSeeds _seeds;
+    private readonly ISeeds _seeds;
 
-    public Locations(FileMaps maps, FileSeeds seeds)
+    public Locations(FileMaps maps, ISeeds seeds)
     {
         _maps = maps;
         _seeds = seeds;
