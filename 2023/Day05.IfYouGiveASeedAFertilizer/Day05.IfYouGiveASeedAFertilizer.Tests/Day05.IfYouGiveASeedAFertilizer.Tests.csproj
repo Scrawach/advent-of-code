@@ -21,4 +21,13 @@
       <ProjectReference Include="..\Day05.IfYouGiveASeedAFertilizer\Day05.IfYouGiveASeedAFertilizer.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="example.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="task.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
