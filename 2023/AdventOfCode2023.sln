@@ -34,6 +34,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day08.HauntedWasteland", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day08.HauntedWasteland.Tests", "Day08.HauntedWasteland\Day08.HauntedWasteland.Tests\Day08.HauntedWasteland.Tests.csproj", "{1D34A0D7-2521-42B6-AAA4-8167C2180D9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day09.MirageMaintenance", "Day09.MirageMaintenance\Day09.MirageMaintenance\Day09.MirageMaintenance.csproj", "{18839AC2-7774-45B5-A17B-B7A52BF0642C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day09.MirageMaintenance.Tests", "Day09.MirageMaintenance\Day09.MirageMaintenance.Tests\Day09.MirageMaintenance.Tests.csproj", "{543D1BF6-914A-46F3-B7D2-5F0941B76B9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,5 +112,13 @@ Global
 		{1D34A0D7-2521-42B6-AAA4-8167C2180D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D34A0D7-2521-42B6-AAA4-8167C2180D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D34A0D7-2521-42B6-AAA4-8167C2180D9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18839AC2-7774-45B5-A17B-B7A52BF0642C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18839AC2-7774-45B5-A17B-B7A52BF0642C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18839AC2-7774-45B5-A17B-B7A52BF0642C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18839AC2-7774-45B5-A17B-B7A52BF0642C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{543D1BF6-914A-46F3-B7D2-5F0941B76B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{543D1BF6-914A-46F3-B7D2-5F0941B76B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{543D1BF6-914A-46F3-B7D2-5F0941B76B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{543D1BF6-914A-46F3-B7D2-5F0941B76B9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
