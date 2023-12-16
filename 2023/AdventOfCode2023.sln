@@ -38,6 +38,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day09.MirageMaintenance", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day09.MirageMaintenance.Tests", "Day09.MirageMaintenance\Day09.MirageMaintenance.Tests\Day09.MirageMaintenance.Tests.csproj", "{543D1BF6-914A-46F3-B7D2-5F0941B76B9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day10.PipeMaze", "Day10.PipeMaze\Day10.PipeMaze\Day10.PipeMaze.csproj", "{0A668189-50AD-4ADB-AD8F-9C2FA57EB1E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day10.PipeMaze.Tests", "Day10.PipeMaze\Day10.PipeMaze.Tests\Day10.PipeMaze.Tests.csproj", "{73885C2C-28D7-4764-A69C-E213796649D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -120,5 +124,13 @@ Global
 		{543D1BF6-914A-46F3-B7D2-5F0941B76B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{543D1BF6-914A-46F3-B7D2-5F0941B76B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{543D1BF6-914A-46F3-B7D2-5F0941B76B9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A668189-50AD-4ADB-AD8F-9C2FA57EB1E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A668189-50AD-4ADB-AD8F-9C2FA57EB1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A668189-50AD-4ADB-AD8F-9C2FA57EB1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A668189-50AD-4ADB-AD8F-9C2FA57EB1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73885C2C-28D7-4764-A69C-E213796649D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73885C2C-28D7-4764-A69C-E213796649D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73885C2C-28D7-4764-A69C-E213796649D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73885C2C-28D7-4764-A69C-E213796649D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
