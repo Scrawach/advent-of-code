@@ -42,6 +42,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day10.PipeMaze", "Day10.Pip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day10.PipeMaze.Tests", "Day10.PipeMaze\Day10.PipeMaze.Tests\Day10.PipeMaze.Tests.csproj", "{73885C2C-28D7-4764-A69C-E213796649D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day11.CosmicExpansion", "Day11.CosmicExpansion\Day11.CosmicExpansion\Day11.CosmicExpansion.csproj", "{676D9B31-15DC-462A-A070-70374F845809}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -132,5 +134,9 @@ Global
 		{73885C2C-28D7-4764-A69C-E213796649D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73885C2C-28D7-4764-A69C-E213796649D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73885C2C-28D7-4764-A69C-E213796649D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{676D9B31-15DC-462A-A070-70374F845809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{676D9B31-15DC-462A-A070-70374F845809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{676D9B31-15DC-462A-A070-70374F845809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{676D9B31-15DC-462A-A070-70374F845809}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
