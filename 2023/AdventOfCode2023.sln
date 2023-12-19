@@ -44,6 +44,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day10.PipeMaze.Tests", "Day
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day11.CosmicExpansion", "Day11.CosmicExpansion\Day11.CosmicExpansion\Day11.CosmicExpansion.csproj", "{676D9B31-15DC-462A-A070-70374F845809}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day12.HotSprings", "Day12.HotSprings\Day12.HotSprings\Day12.HotSprings.csproj", "{579CFF69-DDAB-4406-B220-50E72A832CC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -138,5 +140,9 @@ Global
 		{676D9B31-15DC-462A-A070-70374F845809}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{676D9B31-15DC-462A-A070-70374F845809}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{676D9B31-15DC-462A-A070-70374F845809}.Release|Any CPU.Build.0 = Release|Any CPU
+		{579CFF69-DDAB-4406-B220-50E72A832CC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{579CFF69-DDAB-4406-B220-50E72A832CC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{579CFF69-DDAB-4406-B220-50E72A832CC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{579CFF69-DDAB-4406-B220-50E72A832CC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
