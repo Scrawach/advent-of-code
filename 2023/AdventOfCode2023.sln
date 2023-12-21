@@ -48,6 +48,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day12.HotSprings", "Day12.H
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day13.PointOfIncidence", "Day13.PointOfIncidence\Day13.PointOfIncidence\Day13.PointOfIncidence.csproj", "{79FCDB8D-F752-45E1-B9BE-4C90548F407A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day14.ParabolicReflectorDish", "Day14.ParabolicReflectorDish\Day14.ParabolicReflectorDish\Day14.ParabolicReflectorDish.csproj", "{14FD90F3-9D8B-40A6-B3F0-3CF739B242EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -150,5 +152,9 @@ Global
 		{79FCDB8D-F752-45E1-B9BE-4C90548F407A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79FCDB8D-F752-45E1-B9BE-4C90548F407A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79FCDB8D-F752-45E1-B9BE-4C90548F407A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14FD90F3-9D8B-40A6-B3F0-3CF739B242EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14FD90F3-9D8B-40A6-B3F0-3CF739B242EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14FD90F3-9D8B-40A6-B3F0-3CF739B242EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14FD90F3-9D8B-40A6-B3F0-3CF739B242EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
